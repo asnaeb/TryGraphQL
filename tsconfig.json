@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "target": "ES2020",
+        "moduleResolution": "node",
+        "plugins": [{ "name": "typescript-plugin-css-modules"}],
+        "strict": true,
+        "declaration": true,
+        "outDir": "lib"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "lib"]
+}

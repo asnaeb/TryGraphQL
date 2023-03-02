@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nunito&display=swap');
+
+:root {
+    --alpha-01-dark: rgba(0,0,0,.1);
+    --border-radius: 2.5px;
+}
+
+.mainwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(93, 93, 93);
+    font-family: Nunito, sans-serif;
+}
+
+.mainwrapper button, textarea, input {
+    all: unset;
+}
+
+.mainwrapper code {
+    font-family: Inconsolata, monospace;
+}
+
+.mainwrapper h1, h2, h3, h4, h5, h6, p {
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+}
+
+.mainwrapper a {
+    color:blueviolet;
+    text-decoration: none;
+}
+
+.mainwrapper a:hover {
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+.endpointwrapper {
+    margin: 1rem 0 0 0;
+    background: ghostwhite;
+    border-radius: var(--border-radius);
+    text-align: left;
+    width: 100%;
+}
+
+#endpoint {
+    font-size: 1rem;
+    padding: .5rem;
+    background: rgb(253,253,255);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: var(--border-radius);
+    width: -webkit-fill-available;
+}
+
+#endpoint::placeholder {
+    filter: opacity(0.3);
+}
+
+#endpoint:focus-visible {
+    border: 1px solid;
+}
+
+.endpointwrapper label {
+    padding: 0.5rem;
+    background: ghostwhite;
+    border: 1px solid var(--alpha-01-dark);
+    border-radius: var(--border-radius);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+}
+
+.querywrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.contentwrapper {
+    display: flex;
+}
+
+.prewrap {
+    white-space: pre-wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column; 
+    align-items: baseline; 
+    background-color: ghostwhite;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.box:nth-child(2) {
+    margin-left: .5rem;
+}
+
+.box:nth-child(2) .content {
+    height: 100%;
+}
+
+.content {
+    color: black;
+    font-family: Inconsolata, monospace;
+    font-size: 1rem;
+    width: 20rem; 
+    height: 15rem; 
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0,0,0,.2); 
+    resize: none; 
+    padding: 1rem;
+    white-space: pre-wrap;
+    background: rgb(253,253,255);
+}
+
+.content.error {
+    border: 1px solid lightpink;
+}
+
+.content:focus-visible {
+    border: 1px solid;
+}
+
+.buttonwrapper {
+    margin: 1rem 0;
+}
+
+.buttonwrapper button {
+    padding: 1rem;
+    background: ghostwhite;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0,0,0,0);
+    margin-right: .5rem;
+}
+
+.buttonwrapper button:enabled:hover {
+    cursor: pointer;
+    border: 1px solid var(--alpha-01-dark)
+}
+
+.buttonwrapper button:active {
+    box-shadow: 0 0 5px var(--alpha-01-dark) inset;
+}
+
+.buttonwrapper button:disabled {
+    filter: opacity(0.3);
+}
+
+.buttonwrapper .clear {
+    background:lavenderblush!important;
+}

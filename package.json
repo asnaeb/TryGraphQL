@@ -1,0 +1,35 @@
+{
+  "name": "try-graphql",
+  "version": "1.0.0",
+  "description": "A simple react component for trying out graphql endpoints",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack",
+    "tsc": "tsc",
+    "test": "webpack && esbuild test/www/app.tsx --outdir=test/www --bundle --servedir=test/www "
+  },
+  "keywords": [
+    "graphql",
+    "react",
+    "client"
+  ],
+  "author": "soffyo",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "css-loader": "^6.7.3",
+    "esbuild": "^0.17.10",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "typescript-plugin-css-modules": "^4.2.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
